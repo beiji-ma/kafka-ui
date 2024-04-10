@@ -1,0 +1,21 @@
+{
+"name": "alan-debezium-mysql-connector",
+"config": 
+{
+"connector.class": "io.debezium.connector.mysql.MySqlConnector",
+"database.connectionTimeZone": "UTC",
+"database.hostname": "172.27.140.1",
+"database.port": "3307",
+"database.user": "root",
+"database.password": "password",
+"database.server.id": "12332",
+"database.server.name": "ALAN",
+"database.include.list": "cdctest",
+"database.history.kafka.bootstrap.servers": "kafka0:29092",
+"database.history.kafka.topic": "alan.historydb",
+"include.schema.changes": "true",
+"topic.prefix": "ALAN",
+"schema.history.internal.kafka.topic":"alan.historydb",
+"schema.history.internal.kafka.bootstrap.servers":"kafka0:29092"
+}
+}
